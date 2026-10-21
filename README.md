@@ -4,7 +4,7 @@
 
 # WandMagica
 
-### A community continuation of WandEnhancer
+### An alternative fork of WandEnhancer
 
 [![GitLab Mirror (upstream)](https://img.shields.io/badge/GitLab-upstream%20mirror-fc6d26?logo=gitlab)](https://gitlab.com/kitbyte/wand-enhancer)
 
@@ -12,7 +12,7 @@
 
 <h4>An open-source interoperability tool designed to extend local client-side configurations and improve the UX of the Wand application.</h4>
 
-**WandMagica is the community continuation of [k1tbyte/Wand-Enhancer](https://github.com/k1tbyte/Wand-Enhancer), picking up bug fixes and features while upstream has been inactive since 2026-09-09.** It's the same tool, under new maintenance on this repository: the binary is still called `WandEnhancer.exe`, and this README calls the tool itself "WandEnhancer" throughout, since that's what it is. "WandMagica" is this fork's name for the project hosting it. Upstream [PR #318](https://github.com/k1tbyte/Wand-Enhancer/pull/318) carries this fork's original fix back to k1tbyte's repository and remains open; this fork may continue independently even if it's merged.
+**WandMagica is a fork of [k1tbyte/Wand-Enhancer](https://github.com/k1tbyte/Wand-Enhancer) maintained as an alternative alongside it, not a replacement for it.** Upstream is active and maintained; this fork started while it had gone quiet for a while, kept its own fixes and features going, and now syncs upstream's own fixes back in as they land. It's the same tool: the binary is still called `WandEnhancer.exe`, and this README calls the tool itself "WandEnhancer" throughout, since that's what it is. "WandMagica" is this fork's own name for the project hosting it.
 
 **🚨 IMPORTANT NOTICE: THIS PROJECT HAS NO OFFICIAL YOUTUBE TUTORIALS OR GUIDES. 🚨
 There are no official videos showing how to install or use this tool. Scammers are creating fake tutorials using this project's name and placing malware/password stealers in the video descriptions. The only official prebuilt executable is attached to a [GitHub Release on this repository](../../releases), `Glitxhhh/WandMagica`. If you downloaded an `.exe` or archive from a YouTube link, a random website, or a third-party mirror, you did not get it from this project. We are not responsible for third-party downloads. The binary is unsigned (see below) and Windows or your antivirus may warn on first run; that alone is not a sign of tampering, but always get it from this repository's own Releases page, never a link someone else sends you.**
@@ -169,7 +169,7 @@ This project is licensed under the Apache-2.0 - see the [LICENSE](LICENSE.md) fi
 
 ## ❤️ Support
 
-This is the community continuation fork - these links support its maintenance, not the original project's.
+This is an alternative fork, maintained separately from k1tbyte's own project - these links support this fork's maintenance, not the original.
 
 If you find this fork useful, you can support its development using any of the options below 🙌
 

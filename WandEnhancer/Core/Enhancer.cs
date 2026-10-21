@@ -104,6 +104,7 @@ namespace WandEnhancer.Core
         public void Patch()
         {
             ProcessTerminator.TryKillProcess(_weModConfig.BrandName);
+            ProcessTerminator.TryKillProcess($"{_weModConfig.BrandName}AuxiliaryService");
             string markerPath = Path.Combine(Path.GetDirectoryName(_asarPath), IncompletePatchMarkerFileName);
             File.WriteAllText(markerPath, string.Empty);
 
@@ -326,6 +327,7 @@ namespace WandEnhancer.Core
             }
 
             ProcessTerminator.TryKillProcess(_weModConfig.BrandName);
+            ProcessTerminator.TryKillProcess($"{_weModConfig.BrandName}AuxiliaryService");
             FileRetry.Run(() =>
             {
                 AsarSharp.Utils.Extensions.CopyOver(_backupPath, _asarPath);
@@ -345,9 +347,10 @@ namespace WandEnhancer.Core
                 File.Delete(proxyDllPath);
             }
 
-            // Undo all footprints at once: launcher stub and on-disk fuse.
+            // Undo all footprints at once: launcher stub, on-disk fuse, background watcher.
             LauncherDeployment.Restore(_weModConfig);
             DiskFusePatch.Remove(_weModConfig.ExecutablePath, _logger);
+            Services.WatcherAutostart.Stop(_weModConfig);
 
             string squirrelRoot = SquirrelRoot;
             foreach (var leftover in new[]
